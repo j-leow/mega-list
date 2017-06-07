@@ -10,7 +10,7 @@ body {
   margin-left: auto;
   margin-right: auto;
   max-width: 900px;
-  background: #a2c523;
+  background: #75b1a9;
   padding: 20px 30px 20px 30px;
   font-family: 'Verdana', sans-serif;
   font-size: 1rem;
@@ -22,8 +22,8 @@ body {
 }
 
 header {
-  background-color: #7d4427;
-  padding: 30px 40px;
+  background-color: #4f6457;
+  padding: 30px 0px 15px 0px;
   color: #fff;
   text-align: center;
 }
@@ -36,29 +36,36 @@ header:after {
 
 h1 {
   padding: 0px 0px 10px 40px;
+}
+
+h1, h3, h4 {
   display: block;
   margin: -10px -30px 30px -30px;
   font-family: 'Verdana', sans-serif;
 }
 
+
+label {
+  margin: 2px 0px 5px 200px;
+  padding-bottom: 5px;
+  font-size: 1rem;
+}
+
 input[type="text"] {
   border: none;
-  color: #2c7873;
-  background: #a8ce5a;
-  height: 25px;
-  line-height: 0.8rem;
-  margin-bottom: 16px;
-  margin-right: 6px;
-  margin-top: 2px;
+  color: #4c4c4c;
+  background: #acd0c0;
+  margin: 2px 6px 0px 200px;
   outline: 0 none;
   padding: 5px 0px 5px 5px;
-  width: 70%;
+  font-size: 1.5rem;
+  width: 50%;
+  height: 3rem;
   border-radius: 2px;
   -webkit-border-radius: 2px;
   -moz-border-radius: 2px;
   -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
 }
-
 
 ul {
   margin: 0;
@@ -67,9 +74,6 @@ ul {
 
 ul li {
   position: relative;
-  padding: 12px 8px 12px 40px
-  background: #eee;
-  font-size: 1rem;
 
   /* Makes the text non-selectable */
   -webkit-user-select: none;
@@ -78,11 +82,11 @@ ul li {
   user-select: none;
 }
 
-.list {
+.renderedList {
   position: relative;
-  padding: 12px 8px 12px 40px
-  background: #eee;
-  font-size: 1rem;
+  padding: 15px 5px 15px 5px;
+  background: #acd0c0;
+  font-size: 1.5rem;
 }
 
 
@@ -99,23 +103,21 @@ ul li {
 
 .favorite {
   position: absolute;
-  right: 20px;
+  right: 60px;
   top: 0;
-  padding: 12px 36px 12px 16px;
+  padding: 12px 16px 12px 16px;
 }
 
 .favorite, .delete {
-  background: #004445;
   border: none;
-  padding: 10px 25px 10px 25px;
-  color: #585858;
+  color: #e8e8e3;
+  background: #4f6457;
   border-radius: 4px;
   -moz-border-radius: 4px;
   -webkit-border-radius: 4px;
-  font-weight: bold;
-  box-shadow: 1px 1px 1px #3D3D3D;
-  -webkit-box-shadow:1px 1px 1px #3D3D3D;
-  -moz-box-shadow:1px 1px 1px #3D3D3D;
+  box-shadow: 1px 1px 1px #3d3d3d;
+  -webkit-box-shadow:1px 1px 1px #3d3d3d;
+  -moz-box-shadow:1px 1px 1px #3d3d3d;
 }
 
 .favorite:hover, .delete:hover {
@@ -123,11 +125,15 @@ ul li {
   background-color: #ebebeb;
 }
 
+#append {
+  margin: 2px 6px 0px 200px;
+}
+
 #append, #prepend {
-  background: #004445;
+  background: #4f6457;
   border: none;
   padding: 10px 25px 10px 25px;
-  color: #585858;
+  color: #ececec;
   border-radius: 4px;
   -moz-border-radius: 4px;
   -webkit-border-radius: 4px;

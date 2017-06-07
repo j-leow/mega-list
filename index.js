@@ -39,8 +39,8 @@ function handleFavorite(ev) {
 
   //If button is pushed, change color of button. Else, change back to the original color.
   if (favorite.value === false) {
-    favorite.style.backgroundColor = '#ff000c'
-    favorite.style.borderColor = "#ff000c"
+    favorite.style.backgroundColor = '#db4141'
+    favorite.style.borderColor = "#db4141"
     favorite.style.color = '#ffdd02'
     favorite.value = true
   }
@@ -67,6 +67,7 @@ function renderList(animalData) {
     Object.keys(animalData).map(function(fieldName) {
         const li = renderListItem(animalData[fieldName])
         li.id = 'list'
+        li.className = 'renderedList'
         list.appendChild(li)
         const favBtn = makeFavButton()
         li.appendChild(favBtn)
