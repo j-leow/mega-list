@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
   padding: 1rem 4rem;  /*rem = base font for all of the page. Root em, size is consistent relative to everything else in the page. Use em if you want the font to change relative to everything else. */
 }
@@ -11,22 +15,13 @@ form {
   margin-top: 50px;
 }
 
-dl {
-  padding: 15px 10px;
+ul {
+  margin: 0;
+  padding: 0;
 }
 
-dl > li {
-  list-style: none;
-}
-
-dt, dd {
-  display: inline-block;
-  vertical-align: top;
-  width: 48%;
-}
-
-dl:nth-of-type(even) {
-  background-color: WhiteSmoke;
+ul li {
+  
 }
 
 @media (min-width: 700px) {
